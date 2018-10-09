@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ControllerScreen"
+    tools:showIn="@layout/activity_controller_screen">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="383dp"
+        android:layout_height="47dp"
+        android:text="GreenFlight Controller"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="68dp" />
+
+    <Button
+        android:id="@+id/buttonRight"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="78dp"
+        android:text=">"
+        android:textSize="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="310dp" />
+
+    <Button
+        android:id="@+id/buttonLeft"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="77dp"
+        android:text="<"
+        android:textSize="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="310dp" />
+
+    <Button
+        android:id="@+id/buttonDown"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:text="˅"
+        android:textSize="40dp"
+        app:layout_constraintEnd_toStartOf="@+id/buttonRight"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toEndOf="@+id/buttonLeft"
+        tools:layout_editor_absoluteY="379dp" />
+
+    <Button
+        android:id="@+id/buttonUp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:text="˄"
+        android:textSize="40dp"
+        app:layout_constraintEnd_toStartOf="@+id/buttonRight"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toEndOf="@+id/buttonLeft"
+        tools:layout_editor_absoluteY="243dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="138dp"
+        android:layout_height="124dp"
+        android:background="@mipmap/ic_launcher_foreground"
+        android:cropToPadding="true"
+        tools:layout_editor_absoluteX="123dp"
+        tools:layout_editor_absoluteY="68dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="58dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="START"
+        android:textColor="@android:color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="177dp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="58dp"
+        android:backgroundTint="@color/colorAccent"
+        android:text="STOP"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="177dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="385dp"
+        android:layout_height="82dp"
+        android:text="Lorem Ipsum"
+
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
